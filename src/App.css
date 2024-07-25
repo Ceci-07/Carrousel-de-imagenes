@@ -1,0 +1,103 @@
+.Ejercicios-tres{
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 55px;
+  background-image: url('./img/imgfondo.jpg');
+  background-position: center;
+  color: white;
+  border: 2px solid black;
+}
+
+.carrusel-principal{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: 4px solid grey;
+}
+
+.flecha-izquierda, .flecha-derecha{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 3rem;
+   cursor: pointer;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.flecha-izquierda{
+  left: 10px;
+}
+.flecha-derecha{
+  right: 10px;
+}
+.title-de-estacion{
+  font-size: 1.5rem;
+  color:#808080 ;
+  background-color: #d1d0e0;
+}
+
+@media(max-width:900px){
+  .carrusel-principal{
+    height: 400px;
+  }
+  .flecha-izquierda, .flecha-derecha{
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media(max-width:769px){
+  .carrusel-principal{
+    height: 400px;
+    border-width:2px;
+  }
+  .flecha-izquierda, .flecha-derecha{
+    top: calc(50% - 25px);
+  }
+  .flecha-izquierda{
+    left: 0;
+  }
+  .flecha-derecha{
+    right: 0;
+  }
+  .change img{
+    max-width: 50%;
+    height: auto;
+  }
+}
+
+@media(max-width:480px) {
+  .Ejercicios-tres{
+    font-size: 1.5rem;
+  }
+  .carrusel-principal{
+    height: 250px;
+    border-width:1px;
+  }
+  .flecha-izquierda, .flecha-derecha{
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+  }
+  .change img{
+    max-width: 50%;
+    height: auto;
+  }
+}
+@media(max-width:400px) {
+  .flecha-izquierda, .flecha-derecha{
+    width: 30px;
+    height: 30px;
+  }
+  .change img{
+    max-width: 40%;
+    height: auto;
+  }
+}
